@@ -1,7 +1,7 @@
 
 # Example NGAP Trace for UE Registration and Session Setup
 
-This repository contains an **example NGAP packet trace** collected from an **Open5GS-based experimental setup**. The trace is provided as a lightweight illustrative companion to the analytical results discussed in the paper.
+This repository contains an **example NGAP packet trace** collected from an **Open5GS-based experimental setup**. The trace is provided as a lightweight illustrative companion to the analytical results discussed in the paper entitled **Burstiness-Aware Performance Analysis of 5G Service Chains via Robust Queueing Approximation**.
 
 The purpose of the file is to show a **real control-plane message sequence** associated with:
 
