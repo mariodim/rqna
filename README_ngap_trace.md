@@ -107,7 +107,7 @@ This quantity is used as an **observable proxy for the control-plane service tim
 
 Open
 
-`new_test_open5gs_private.pcapng`
+`open5gs_private.pcapng`
 
 in **Wireshark**.
 
@@ -185,32 +185,6 @@ In the example trace the value is typically around:
 
 which is consistent with the service-time parameters used in the analytical model.
 
----
-
-# Optional: end-to-end NGAP setup delay
-
-If desired, one can also measure the delay between:
-
-- `InitialUEMessage`
-- `PDUSessionResourceSetupResponse`
-
-This provides a broader **NGAP-observed end-to-end setup delay**, which is usually slightly larger than the service-time proxy defined above.
-
----
-
-# Optional Wireshark screenshot
-
-Including a small screenshot of the Wireshark packet list highlighting the two packets used to measure the delay can help readers quickly understand the procedure.
-
-Suggested screenshot content:
-
-- packet list showing
-  - `InitialUEMessage`
-  - `PDUSessionResourceSetupRequest`
-- the **Time column** visible
-- the **display filter** shown at the top
-
-This is optional but can make the repository easier to understand for readers who are less familiar with NGAP traces.
 
 ---
 
@@ -219,9 +193,4 @@ This is optional but can make the repository easier to understand for readers wh
 The quantity extracted from the trace should be interpreted as an **observable proxy for the control-plane service time**, not as the internal processing time of a single network function.
 It captures the portion of the control-plane setup visible on the **N2 interface**.
 
----
 
-# Short repository description
-
-Example anonymized NGAP trace from an Open5GS-based setup illustrating UE registration and session setup signaling.
-The trace can be used to extract an observable proxy for the control-plane service time from the delay between the Registration Request and the subsequent PDU Session Resource Setup Request.
