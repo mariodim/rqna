@@ -14,7 +14,7 @@ The trace can be used to extract an **observable proxy for the control-plane ser
 
 # File included
 
-`new_test_open5gs_private.pcapng`
+`open5gs_private.pcapng`
 
 ---
 
