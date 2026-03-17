@@ -12,9 +12,10 @@ The trace can be used to extract an **observable proxy for the control-plane ser
 
 ---
 
-# File included
+# Files included
 
 `open5gs_private.pcapng`
+`open5gs_private2.pcapng`
 
 ---
 
@@ -107,7 +108,7 @@ This quantity is used as an **observable proxy for the control-plane service tim
 
 Open
 
-`open5gs_private.pcapng`
+`open5gs_private.pcapng` or `open5gs_private2.pcapng`
 
 in **Wireshark**.
 
@@ -187,6 +188,9 @@ which is consistent with the service-time parameters used in the analytical mode
 
 
 ---
+# Open5GS Test environment 
+
+The test environment scheme includes UERANSIM (UE emulator) and Open5GS. The two platforms have been installed on two VMs (Linux Ubuntu 20.04), both equipped with 1 vCPU (Intel Xeon E5- 1620 v2 @ 3.70 GHz); The RAM amounts to 10 GB for Open5GS VM and to 2.21 GB for UERANSIM VM. AMF, SMF, and UPF nodes run as native Linux processes.
 
 # Important note
 
